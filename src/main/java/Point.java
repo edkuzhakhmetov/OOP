@@ -9,7 +9,7 @@ class Point {
 
     public String toString() {
         String res = "";
-        res+="{"+x+";"+y+"}";
+        res += "{" + x + ";" + y + "}";
         return res;
     }
 
