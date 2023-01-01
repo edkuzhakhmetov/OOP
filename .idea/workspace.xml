@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c61ac314-52bb-4762-befd-58c117cb4714" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CurvedLine.java" afterDir="false" />
+    <list default="true" id="c61ac314-52bb-4762-befd-58c117cb4714" name="Changes" comment="ломаная линия">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CurvedLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CurvedLine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Start.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +58,14 @@
       <option name="presentableId" value="Default" />
       <updated>1672170062255</updated>
     </task>
+    <task id="LOCAL-00001" summary="ломаная линия">
+      <created>1672595956698</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672595956698</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -70,5 +78,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ломаная линия" />
+    <option name="LAST_COMMIT_MESSAGE" value="ломаная линия" />
   </component>
 </project>
