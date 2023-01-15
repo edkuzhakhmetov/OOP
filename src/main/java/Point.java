@@ -7,10 +7,11 @@ class Point {
         this.y = y;
     }
 
+    @Override
     public String toString() {
-        String res = "";
-        res += "{" + x + ";" + y + "}";
-        return res;
+        return "{" + x +
+                ";" + y +
+                '}';
     }
-
 }
+

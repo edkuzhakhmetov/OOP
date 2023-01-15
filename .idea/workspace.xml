@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c61ac314-52bb-4762-befd-58c117cb4714" name="Changes" comment="ломаная линия">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c61ac314-52bb-4762-befd-58c117cb4714" name="Changes" comment="Создайте такой подкласс класса Point, который будет иметь не две, а три координаты на плоскости: X,Y,Z. Вместо класса приведенного в задании можно использовать сделанный ранее самостоятельно класс Точки.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CurvedLineClosed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CurvedLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CurvedLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Start.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,5 +91,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ломаная линия" />
     <option name="LAST_COMMIT_MESSAGE" value="ломаная линия" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

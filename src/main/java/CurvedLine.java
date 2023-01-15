@@ -9,8 +9,6 @@ import java.util.List;
 public class CurvedLine {
     Point[] pointArr;
     List<Line> linesArr;
-    double CurvedLineLength;
-
 
     //При создании объекта можно ничего не указывать
     public CurvedLine() {
@@ -18,7 +16,7 @@ public class CurvedLine {
         Point p1 = new Point(1, 1);
         Point p2 = new Point(3, 3);
         Point p3 = new Point(2, 2);
-        Point p4 = new Point(10, 10);
+        Point p4 = new Point(4, 4);
         Point[] arr = {p1, p2, p3, p4};
         this.pointArr = arr;
         LineCreate(pointArr);
@@ -32,14 +30,12 @@ public class CurvedLine {
 
     //Создание линий из массива точек
     public void LineCreate(Point[] pointArr) {
-        linesArr = new ArrayList<>();
-        CurvedLineLength = 0;
         Line line;
-        for (int i = 0; i < this.pointArr.length - 1; ) {
-            line = new Line(pointArr[i], pointArr[++i]);
+        linesArr = new ArrayList<>();
+        int i;
+        for (i = 0; i < pointArr.length - 1; i++) {
+            line = new Line(pointArr[i], pointArr[i + 1]);
             linesArr.add(line);
-            // Рассчитать длину Ломаной
-            CurvedLineLength += line.getLineLength();
         }
     }
 
@@ -48,20 +44,18 @@ public class CurvedLine {
         return linesArr;
     }
 
-
-    // Может вернуть свою длину
-    public double getCurvedLineLength() {
-        return CurvedLineLength;
+    //4.Рассчитать длину массива Линий
+    private double CurvedLineSumLinesArrLength() {
+        double sum = 0;
+        for (Line lines : this.linesArr
+        ) {
+            sum += lines.getLineLength();
+        }
+        return sum;
     }
 
-    //4.Рассчитать длину массива Линий
-    public double getCurvedLineLinesArrLength() {
-        double CurvedLineSumLinesArrLength = 0;
-        for (Line lines : linesArr
-        ) {
-            CurvedLineSumLinesArrLength += lines.getLineLength();
-        }
-        return CurvedLineSumLinesArrLength;
+    public double getLength() {
+        return CurvedLineSumLinesArrLength();
     }
 
     //Может быть приведена к строковой форме вида “Линия [Т1,T2,…,TN]”, где TN – это результат приведения к строке Точки с номером N
