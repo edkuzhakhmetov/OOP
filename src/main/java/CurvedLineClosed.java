@@ -36,7 +36,7 @@ public class CurvedLineClosed extends CurvedLine {
         }
     }
     //Может вернуть массив Линий
-
+    @Override
     public double getLength() {
         return super.getLength();
     }

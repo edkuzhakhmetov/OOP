@@ -1,4 +1,4 @@
-class Line {
+public class Line implements Start.Lenghtable {
     //Создайте класс Линия, расположенную на двумерной плоскости, которая описывается:
     //Координата начала: Точка
     //Координата конца: Точка
@@ -26,7 +26,8 @@ class Line {
     }
 
     //Может вернуть длину Линии
-    public double getLineLength() {
+    @Override
+    public double getLength() {
         int xLength = this.point2.x - this.point1.x;
         int yLength = this.point2.y - this.point1.y;
         double gipo = Math.sqrt(Math.pow(xLength, 2) + Math.pow(yLength, 2));

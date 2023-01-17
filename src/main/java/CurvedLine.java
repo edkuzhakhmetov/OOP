@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -6,7 +5,7 @@ import java.util.List;
 //Создайте класс Ломаная, которая будет представлять собой ломаную линию (см. пример на рис.1), которая описывается:
 //
 //массив Точек, через которые линия проходит
-public class CurvedLine {
+public class CurvedLine implements Start.Lenghtable {
     Point[] pointArr;
     List<Line> linesArr;
 
@@ -47,12 +46,13 @@ public class CurvedLine {
     //4.Рассчитать длину массива Линий
     private double CurvedLineSumLinesArrLength() {
         double sum = 0;
-        for (Line lines : this.linesArr
-        ) {
-            sum += lines.getLineLength();
+        for (Line lines : this.linesArr) {
+            sum += lines.getLength();
         }
         return sum;
     }
+
+    @Override
 
     public double getLength() {
         return CurvedLineSumLinesArrLength();
@@ -63,4 +63,5 @@ public class CurvedLine {
     public String toString() {
         return "Линия " + Arrays.toString(pointArr);
     }
+
 }
